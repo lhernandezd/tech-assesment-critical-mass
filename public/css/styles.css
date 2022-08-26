@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+html body {
+  color: #c9c9c9;
+  font-family: "Source Sans Pro", system-ui, Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+html body a {
+  text-decoration: none;
+}
+html body a:visited, html body a:link {
+  color: inherit;
+}
+html body a:hover {
+  color: #0066cc;
+}
+
+/*# sourceMappingURL=styles.css.map */

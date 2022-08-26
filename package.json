@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "compileSassFiles": "sass ./scss/styles.scss ./public/css/styles.css",
+    "watch": "nodemon -e scss -x 'npm run compileSassFiles'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
