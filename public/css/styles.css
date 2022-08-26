@@ -15,6 +15,11 @@ html body {
   line-height: 1.5;
   font-weight: 300;
 }
+@media (min-width: 576px) {
+  html body {
+    font-size: 14px;
+  }
+}
 html body a {
   text-decoration: none;
 }
@@ -33,6 +38,7 @@ html body a:hover {
 }
 
 #navigation-indicator {
+  display: none;
   position: absolute;
   height: 1px;
   bottom: 0px;
@@ -51,6 +57,11 @@ html body a:hover {
   padding: 0 10px 0 10px;
   border-bottom: 1px #c9c9c9 solid;
   width: 100%;
+}
+@media (min-width: 576px) {
+  #navigation-list {
+    gap: 20px;
+  }
 }
 #navigation-list li {
   padding: 10px 0 10px 0;

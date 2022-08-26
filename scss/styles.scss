@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap");
+@import "responsive";
 
 $font-stack: "Source Sans Pro", system-ui, Helvetica, Arial, sans-serif;
 
@@ -20,6 +21,9 @@ html {
     font-size: 12px;
     line-height: 1.5;
     font-weight: 300;
+    @include sm {
+      font-size: 14px;
+    }
     a {
       text-decoration: none;
       &:visited,
@@ -41,6 +45,7 @@ html {
 }
 
 #navigation-indicator {
+  display: none;
   position: absolute;
   height: 1px;
   bottom: 0px;
@@ -59,6 +64,9 @@ html {
   padding: 0 10px 0 10px;
   border-bottom: 1px $grey-color solid;
   width: 100%;
+  @include sm {
+    gap: 20px;
+  }
   li {
     padding: 10px 0 10px 0;
     text-align: center;
