@@ -79,3 +79,7 @@ function setInitialActiveState() {
 const indicator = document.getElementById("navigation-indicator");
 
 createNavigationElements();
+
+window.addEventListener("resize", () => {
+  calculateIndicatorPosition();
+});
