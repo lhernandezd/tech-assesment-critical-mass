@@ -21,6 +21,8 @@ function calculateIndicatorPosition() {
 
 function setElementAndIndicatorState(element, initial = false) {
   const activeLink = document.querySelectorAll("a.active");
+  const cityDate = document.getElementById("city-date");
+  const cityTime = document.getElementById("city-time");
 
   // remove active class from all links
   activeLink.forEach((item) => {
@@ -36,6 +38,16 @@ function setElementAndIndicatorState(element, initial = false) {
   if (initial) {
     element.parentElement.setAttribute("aria-selected", "true");
     indicator.style.display = "inline-block";
+
+    // set interval time
+    setInterval(() => {
+      const currentActiveLink = document.querySelectorAll("a.active")[0];
+      const timeZone = currentActiveLink.dataset.timezone;
+      const time = new Date().toLocaleString("en-US", { timeZone });
+      const [formatedDate, formatedTime] = time.split(", ");
+      cityDate.innerText = formatedDate;
+      cityTime.innerText = formatedTime;
+    }, 600);
   }
 }
 

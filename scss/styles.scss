@@ -75,3 +75,14 @@ html {
     }
   }
 }
+
+.timezone-section {
+  margin-top: 80px;
+  text-align: center;
+  #city-time,
+  #city-date {
+    font-size: 30px;
+    font-weight: 300;
+    color: $black-color;
+  }
+}

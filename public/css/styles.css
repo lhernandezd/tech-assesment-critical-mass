@@ -71,4 +71,15 @@ html body a:hover {
   color: #000;
 }
 
+.timezone-section {
+  margin-top: 80px;
+  text-align: center;
+}
+.timezone-section #city-time,
+.timezone-section #city-date {
+  font-size: 30px;
+  font-weight: 300;
+  color: #000;
+}
+
 /*# sourceMappingURL=styles.css.map */
